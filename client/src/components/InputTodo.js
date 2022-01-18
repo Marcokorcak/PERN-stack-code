@@ -12,7 +12,7 @@ try {
     const response = await fetch("http://localhost:5000/todos", {method: "POST", headers: {"Content-Type" : "application/json"}, body: JSON.stringify(body)
 
     });
-    console.log(repsonse);
+    window.location = "/";
 } catch (err) {
     console.error(err.message);
 }

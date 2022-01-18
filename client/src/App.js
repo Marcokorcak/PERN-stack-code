@@ -5,12 +5,14 @@ import React, {Fragment} from React
 //components
 
 import InputTodo from './components/InputTodo';
+import listTodos from './components/ListTodos';
 
 function App() {
   return (
     <Fragment>
       <div className = "container">
       <InputTodo />
+      <listTodos />
       </div>
        </Fragment>
   );
