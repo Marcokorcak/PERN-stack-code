@@ -28,7 +28,7 @@ res.json(newTodo.rows[0])
 app.get("/todos", async (req, res) => {
     try {
         const allTodos = await pool.query("SELECT * FROM todo");
-        res,json(allTodos.rows);
+        res.json(allTodos.rows);
     } catch (err) {
         console.error(err.message);
     }

@@ -1,18 +1,18 @@
 import './App.css';
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 
 
 //components
 
 import InputTodo from './components/InputTodo';
-import listTodos from './components/ListTodos';
+import ListTodos from './components/ListTodos';
 
 function App() {
   return (
     <Fragment>
       <div className = "container">
       <InputTodo />
-      <listTodos />
+      <ListTodos />
       </div>
        </Fragment>
   );
