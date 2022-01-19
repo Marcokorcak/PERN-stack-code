@@ -2,7 +2,7 @@ import React, {Fragment, useEffect, useState} from "react";
 import EditTodo from "./EditTodo";
 
 
-const listTodos = () => {
+const ListTodos = () => {
 
     const [todos, setTodos] = useState([]);
 
@@ -53,7 +53,7 @@ const listTodos = () => {
           <tr key={todo.todo_id}>
               <td>{todo.description}</td>
               <td><EditTodo todo = {todo} /></td>
-              <td><button className="btn btn-danger" onClick={() => deleteTod(todo.todo_id)}> Delete </button></td>
+              <td><button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}> Delete </button></td>
           </tr>
 
       ))}
@@ -61,4 +61,4 @@ const listTodos = () => {
   </table></Fragment>;
 };
 
-export default listTodos;
+export default ListTodos;
