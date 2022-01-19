@@ -24,7 +24,7 @@ const ListTodos = () => {
             
             const response = await fetch("http://localhost:5001/todos");
             const jsonData = await response.json();
-
+            
             setTodos(jsonData);
         } catch (err) {
             console.log(err.message);
